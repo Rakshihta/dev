@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git "https://github.com/Rakshihta/dev.git"
+                git branch : 'main', url : "https://github.com/Rakshihta/dev.git"
             }
         }
         stage('Install') {
